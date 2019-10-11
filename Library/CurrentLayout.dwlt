@@ -111,10 +111,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 683, y: 498}
+  m_MinSize: {x: 681, y: 498}
   m_MaxSize: {x: 14004, y: 14048}
   vertical: 0
-  controlID: 6511
+  controlID: 122
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -136,10 +136,10 @@ MonoBehaviour:
     y: 0
     width: 1448
     height: 947
-  m_MinSize: {x: 406, y: 498}
+  m_MinSize: {x: 404, y: 498}
   m_MaxSize: {x: 10002, y: 14048}
   vertical: 1
-  controlID: 6512
+  controlID: 52
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -161,10 +161,10 @@ MonoBehaviour:
     y: 0
     width: 1448
     height: 673
-  m_MinSize: {x: 406, y: 224}
-  m_MaxSize: {x: 8006, y: 4024}
+  m_MinSize: {x: 404, y: 224}
+  m_MaxSize: {x: 8004, y: 4024}
   vertical: 0
-  controlID: 6513
+  controlID: 53
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -184,8 +184,8 @@ MonoBehaviour:
     y: 0
     width: 253
     height: 673
-  m_MinSize: {x: 202, y: 224}
-  m_MaxSize: {x: 4002, y: 4024}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -385,21 +385,21 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: de34feff3e37feff6637feffdc51feffb06bfeffdc6ffeffce88feffd090feff12a0feff18a0feff7020ffffcc98ffffac9dffffbea4ffffcefbffff484300009a430000d0440000
+      m_ExpandedIDs: 0c51ffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: CSGModel
-        m_OriginalName: CSGModel
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 17534
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 8}
       m_SearchString: 
@@ -611,13 +611,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.28629586, y: 0.41462412, z: -0.13924573, w: 0.85248584}
+    m_Target: {x: 0.2862959, y: 0.41462415, z: -0.13924575, w: 0.8524859}
     speed: 2
     m_Value: {x: 0.2862959, y: 0.41462415, z: -0.13924575, w: 0.8524859}
   m_Size:
-    m_Target: 127.63122
+    m_Target: 129.64282
     speed: 2
-    m_Value: 127.63122
+    m_Value: 129.64282
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -667,20 +667,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Models/Enemy Models/NightmareWraiths
+    - Assets/Simple Health Bar
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Models/Enemy Models/NightmareWraiths
+  - Assets/Simple Health Bar
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: G:\Intro to Game AI\Final Game Project\Asteria\UnityFiles_Asteria\Asteria
+  m_LastProjectPath: G:\Intro to Game AI\Final Game Project\Asteria\UnityFiles_Asteria\Asteria-repo
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 139}
-    m_SelectedIDs: 2e2f0000
-    m_LastClickedID: 12078
-    m_ExpandedIDs: 00000000a82700008a290000582a0000d82a0000fe2a00002e2b0000482b0000d42d00002e2f0000103000002230000062300000d4310000143b0000163b0000183b00001a3b00001c3b00001e3b0000203b0000223b0000243b0000263b0000283b00002a3b00002c3b00002e3b0000303b0000323b0000d83b000000ca9a3b
+    scrollPos: {x: 0, y: 7}
+    m_SelectedIDs: 427c0000
+    m_LastClickedID: 31810
+    m_ExpandedIDs: 00000000f47800007e790000ec790000f8790000607b0000ee7b0000a67d0000a87d0000aa7d0000ac7d0000ae7d0000b07d0000b27d0000b47d0000b67d0000b87d0000ba7d0000bc7d0000be7d0000c07d0000c27d0000c47d0000c67d0000c87d0000ca7d0000cc7d000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -708,7 +708,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000a82700008a290000582a0000d82a0000fe2a00002e2b0000482b0000d42d00002e2f00002230000062300000d4310000143b0000163b0000183b00001a3b00001c3b00001e3b0000203b0000223b0000243b0000263b0000283b00002a3b00002c3b00002e3b0000303b0000323b0000d83b0000e23b000000ca9a3b
+    m_ExpandedIDs: 00000000f47800007e790000ec790000f8790000d27a00001e7b0000607b00006a7b0000707b0000ee7b0000a67d0000a87d0000aa7d0000ac7d0000ae7d0000b07d0000b27d0000b47d0000b67d0000b87d0000ba7d0000bc7d0000be7d0000c07d0000c27d0000c47d0000c67d0000c87d0000ca7d0000cc7d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
