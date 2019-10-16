@@ -13,9 +13,15 @@ public class PlayerAnimationScript : MonoBehaviour
     {
         bool isWalkingPressed = Input.GetKey("up");
         m_animator.SetBool("IsWalking", isWalkingPressed);
+        
 
-        bool hasAttackPressed = Input.GetKey("space");
+
+
+        bool hasAttackPressed = Input.GetKey("1");
         m_animator.SetBool("hasAttack", hasAttackPressed);
+
+        bool hasAttack2Pressed = Input.GetKey("2");
+        m_animator.SetBool("hasAttack2", hasAttack2Pressed);
 
 
 
