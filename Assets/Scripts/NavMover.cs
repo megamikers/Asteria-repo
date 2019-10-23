@@ -27,9 +27,8 @@ public class NavMover : MonoBehaviour
 
         GotoNextPoint();
     }
-
-
-    void GotoNextPoint()
+ 
+   void GotoNextPoint()
     {
         // Returns if no points have been set up
         if (points.Count == 0)
@@ -42,7 +41,6 @@ public class NavMover : MonoBehaviour
         // cycling to the start if necessary.
         destPoint = (destPoint + 1) % points.Count;
     }
-
 
     void Update()
     {
