@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MushroomMon_Ani_Test : MonoBehaviour {
+public class MushroomMon_Ani_Test : MonoBehaviour 
+{
 
 	public const string IDLE	= "Idle";
 	public const string RUN		= "Run";
@@ -12,27 +13,15 @@ public class MushroomMon_Ani_Test : MonoBehaviour {
 
 	Animation anim;
 
-	void Start () {
-		anim = GetComponent<Animation>();
-	}
+	void Start () {anim = GetComponent<Animation>();}
 
-	public void IdleAni (){
-		anim.CrossFade (IDLE);
-	}
+	public void IdleAni (){anim.CrossFade (IDLE);}
 
-	public void RunAni (){
-		anim.CrossFade (RUN);
-	}
+	public void RunAni (){anim.CrossFade (RUN);}
 
-	public void AttackAni (){
-		anim.CrossFade (ATTACK);
-	}
+	public void AttackAni (){anim.CrossFade (ATTACK);}
 
-	public void DamageAni (){
-		anim.CrossFade (DAMAGE);
-	}
+	public void DamageAni (){anim.CrossFade (DAMAGE);}
 
-	public void DeathAni (){
-		anim.CrossFade (DEATH);
-	}
+	public void DeathAni (){anim.CrossFade (DEATH);}
 }
