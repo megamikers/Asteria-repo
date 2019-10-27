@@ -176,8 +176,8 @@
     <Compile Include="Assets\Scripts\_EnemyAIScripts\State.cs" />
     <Compile Include="Assets\Scripts\_EnemyAIScripts\StateController.cs" />
     <Compile Include="Assets\Scripts\_EnemyAIScripts\WaypointSystem.cs" />
-    <Compile Include="Assets\Scripts\BossEnemyAttack.cs" />
-    <Compile Include="Assets\Scripts\BossEnemyHealth.cs" />
+    <Compile Include="Assets\Scripts\BossScripts\BossAttack.cs" />
+    <Compile Include="Assets\Scripts\BossScripts\BossBehaviour.cs" />
     <Compile Include="Assets\Scripts\LevelReset.cs" />
     <Compile Include="Assets\Scripts\PlayerAnimationScript.cs" />
     <Compile Include="Assets\Scripts\PlayerAttack.cs" />

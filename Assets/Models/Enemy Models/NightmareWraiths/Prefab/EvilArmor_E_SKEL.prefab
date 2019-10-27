@@ -1276,7 +1276,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4000011686709638}
   - component: {fileID: 95000013856110340}
-  - component: {fileID: 64000011557791214}
   m_Layer: 0
   m_Name: EvilArmor_E_SKEL
   m_TagString: Untagged
@@ -1319,20 +1318,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!64 &64000011557791214
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000012497305646}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 1
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 0}
 --- !u!1 &1000012585655900
 GameObject:
   m_ObjectHideFlags: 0
