@@ -8588,6 +8588,11 @@ PrefabInstance:
       propertyPath: rotationRate
       value: 81.9
       objectReference: {fileID: 0}
+    - target: {fileID: 9071565523773738158, guid: 6b983e237b3ccb14dbf91f052694c3c7,
+        type: 3}
+      propertyPath: moveSpeed
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 9071565523898713960, guid: 6b983e237b3ccb14dbf91f052694c3c7,
         type: 3}
       propertyPath: m_Height
@@ -8631,7 +8636,7 @@ PrefabInstance:
     - target: {fileID: 9071565523773738157, guid: 6b983e237b3ccb14dbf91f052694c3c7,
         type: 3}
       propertyPath: moveRate
-      value: 1.4
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 9071565523367132391, guid: 6b983e237b3ccb14dbf91f052694c3c7,
         type: 3}
