@@ -179,6 +179,8 @@
     <Compile Include="Assets\Scripts\BossScripts\BossAttack.cs" />
     <Compile Include="Assets\Scripts\BossScripts\BossBehaviour.cs" />
     <Compile Include="Assets\Scripts\LevelReset.cs" />
+    <Compile Include="Assets\Scripts\MainMenu Scripts\LoadSceneOnClick.cs" />
+    <Compile Include="Assets\Scripts\MainMenu Scripts\QuitOnClick.cs" />
     <Compile Include="Assets\Scripts\PlayerAnimationScript.cs" />
     <Compile Include="Assets\Scripts\PlayerAttack.cs" />
     <Compile Include="Assets\Scripts\PlayerControllerRigidBody.cs" />

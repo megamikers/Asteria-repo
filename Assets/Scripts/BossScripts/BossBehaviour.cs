@@ -95,7 +95,7 @@ public class BossBehaviour : MonoBehaviour
             
             // ... damage the player.
             playerHealth.TakeDamage(attackDamage);
-            anim.Play("FallenAngle_Attack6");
+            anim.Play("attack1");
            
         }
     }
