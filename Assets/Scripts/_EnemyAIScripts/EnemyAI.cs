@@ -1,86 +1,78 @@
-﻿using System.Collections;
+﻿ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 // This class controls the enemies AI
 public class EnemyAI : MonoBehaviour
 {
+    private const float MAX_DISTANCE = 10F;
 
-    /*
-    // General state machine variables
-    private GameObject player;
-    private Animator animator;
-    private Ray ray;
-    private RaycastHit hit;
-    private float maxDistanceToCheck = 6.0f;
-    private float currentDistance;
-    private Vector3 checkDirection;
+    // Reference to the MushroomMon_Ani_Test script
+    MushroomMon_Ani_Test mushroom;
 
-    // Patrol state variables
-    public Transform pointA;
-    public Transform pointB;
-    public UnityEngine.AI.NavMeshAgent navMeshAgent;
+    [SerializeField]
+    private Color tintColor = Color.green;
 
-    private int currentTarget;
-    private float distanceFromTarget;
-    private Transform[] waypoints = null;
-     
-    private void Awake()
+    [SerializeField]
+    private Color tintColorForRayCastAll = Color.yellow;
+
+    [SerializeField]
+    private LayerMask layerMask;
+
+    private bool multiple;
+
+    void Update()
     {
-        player = GameObject.FindWithTag("Player");
-        animator = gameObject.GetComponent<Animator>();
-        pointA = GameObject.Find("Way 0").transform;
-        pointB = GameObject.Find("Way 1").transform;
-        navMeshAgent = gameObject.GetComponent<UnityEngine.AI.NavMeshAgent>();
-        waypoints = new Transform[2] {
-            pointA,
-            pointB
-        };
-        currentTarget = 0;
-        navMeshAgent.SetDestination(waypoints[currentTarget].position);
-    }
-     
-    private void FixedUpdate()
-    {
-        //First we check distance from the player 
-        currentDistance = Vector3.Distance(player.transform.position, transform.position);
-        animator.SetFloat("distanceFromPlayer", currentDistance);
-
-        //Then we check for visibility
-        checkDirection = player.transform.position - transform.position;
-        ray = new Ray(transform.position, checkDirection);
-        if (Physics.Raycast(ray, out hit, maxDistanceToCheck))
-        {
-            if (hit.collider.gameObject == player)
-            {
-                animator.SetBool("isPlayerVisible", true);
-            }
-            else
-            {
-                animator.SetBool("isPlayerVisible", false);
-            }
-        }
-        else
-        {
-            animator.SetBool("isPlayerVisible", false);
-        }
-
-        //Lastly, we get the distance to the next waypoint target
-        distanceFromTarget = Vector3.Distance(waypoints[currentTarget].position, transform.position);
-        animator.SetFloat("distanceFromWaypoint", distanceFromTarget);
+        RayCastSingle(); 
     }
 
-    public void SetNextPoint()
+    private void RayCastSingle() 
     {
-        switch (currentTarget)
+        // Get the origin of the Ray/Line
+        Vector3 origin = transform.position;
+
+        // Point the Ray in the forward direction
+        Vector3 direction = transform.forward;
+
+        // Draw the ray on the screen from it's
+        // origin, then point it foward * 10 to
+        //  determine the distances it travels 
+        Debug.DrawRay(origin, direction * MAX_DISTANCE, Color.red);
+
+        // Create a new ray by passing in the origin
+        // and the direction it should travel
+        Ray ray = new Ray(origin, direction);
+
+        if(Physics.Raycast(ray, out RaycastHit rayCastHit, MAX_DISTANCE, layerMask))
         {
-            case 0:
-                currentTarget = 1;
-                break;
-            case 1:
-                currentTarget = 0;
-                break;
+
+            rayCastHit.collider.GetComponent<Renderer>().material.color = tintColor;
+            Debug.Log("Seen");
         }
-        navMeshAgent.SetDestination(waypoints[currentTarget].position);
-    }*/
+    }
+
+    void RayCastAll()
+    {
+        // Get the origin of the Ray/Line
+        Vector3 origin = transform.position;
+
+        // Point the Ray in the forward direction
+        Vector3 direction = transform.forward;
+
+        // Draw the ray on the screen from it's
+        // origin, then point it foward * 10 to
+        //  determine the distances it travels 
+        Debug.DrawRay(origin, direction * MAX_DISTANCE, Color.yellow);
+
+        // Create a new ray by passing in the origin
+        // and the direction it should travel
+        Ray ray = new Ray(origin, direction);
+
+        var multipleHits = Physics.RaycastAll(ray);
+
+       foreach(var rayCastHit in multipleHits)
+        {
+            rayCastHit.collider.GetComponent<Renderer>().material.color = tintColor;
+        }
+    }
 }

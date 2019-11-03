@@ -7,6 +7,7 @@ TagManager:
   - Waypoint
   - Enemy
   - Breadcrumb
+  - Mushroom Men
   layers:
   - Default
   - TransparentFX

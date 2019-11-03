@@ -5,10 +5,14 @@ using UnityEngine.AI;
 
 public class NavMover : MonoBehaviour
 {
+    MushroomMon_Ani_Test mushroom;
+    Collider other;
     List<Transform> points = new List<Transform>();   // List of waypoint Transforms 
 
     private int destPoint = 0;
     private NavMeshAgent agent;
+     
+    public Transform player;
 
     public WaypointSystem path;
     public float remainingDistance = 0.3f;
@@ -16,7 +20,6 @@ public class NavMover : MonoBehaviour
 
     void Start()
     {
-
         points = path.waypoints;
 
         agent = GetComponent<NavMeshAgent>();
@@ -42,7 +45,7 @@ public class NavMover : MonoBehaviour
         // cycling to the start if necessary.
         destPoint = (destPoint + 1) % points.Count;
     }
-
+     
     void Update()
     {
         // Choose the next destination point when the agent gets
@@ -50,5 +53,7 @@ public class NavMover : MonoBehaviour
         if (agent.remainingDistance < remainingDistance)
             GotoNextPoint();
     }
+
+  
 }
 
