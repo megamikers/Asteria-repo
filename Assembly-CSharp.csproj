@@ -173,8 +173,6 @@
     <Compile Include="Assets\SabreCSG\Scripts\UpdateUtility.cs" />
     <Compile Include="Assets\Scripts\_EnemyAIScripts\CrowdAgent.cs" />
     <Compile Include="Assets\Scripts\_EnemyAIScripts\EnemyAI.cs" />
-    <Compile Include="Assets\Scripts\_EnemyAIScripts\EnemySight.cs" />
-    <Compile Include="Assets\Scripts\_EnemyAIScripts\HashIDs.cs" />
     <Compile Include="Assets\Scripts\_EnemyAIScripts\NavMover.cs" />
     <Compile Include="Assets\Scripts\_EnemyAIScripts\Tags.cs" />
     <Compile Include="Assets\Scripts\_EnemyAIScripts\WaypointSystem.cs" />

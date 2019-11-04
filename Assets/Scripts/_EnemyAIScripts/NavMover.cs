@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine.AI;
 
 public class NavMover : MonoBehaviour
-{
+{ 
     MushroomMon_Ani_Test mushroom;
     Collider other;
     List<Transform> points = new List<Transform>();   // List of waypoint Transforms 
@@ -14,15 +14,21 @@ public class NavMover : MonoBehaviour
      
     public Transform player;
 
+    public float followDistance = 20.0f;
+    public float attackDistance = 10.0f;
+
+    [Range(0.0f, 1.0f)]
+    public float attackProbability = 0.5f;
+
     public WaypointSystem path;
     public float remainingDistance = 0.3f;
-
-
+     
     void Start()
     {
         points = path.waypoints;
 
         agent = GetComponent<NavMeshAgent>();
+        mushroom = GetComponent<MushroomMon_Ani_Test>();
 
         // Disabling auto-braking allows for continuous movement
         // between points (ie, the agent doesn't slow down as it
@@ -48,6 +54,27 @@ public class NavMover : MonoBehaviour
      
     void Update()
     {
+        // The distance between the player and the NPC
+        float dist = Vector3.Distance(player.transform.position, this.transform.position);
+
+        bool follow = (dist < followDistance);
+          
+        if(follow)
+        {
+            float random = Random.Range(0.0f, 1.0f);
+            if (random > (1.0f - attackProbability) && dist < attackDistance)
+            {
+                Debug.Log("Player Spotted");
+                mushroom.AttackAni();
+            }
+            else
+            {
+                mushroom.RunAni();
+            } 
+
+            agent.SetDestination(player.transform.position);
+        }
+
         // Choose the next destination point when the agent gets
         // close to the current one.
         if (agent.remainingDistance < remainingDistance)
