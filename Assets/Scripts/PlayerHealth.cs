@@ -92,6 +92,6 @@ public class PlayerHealth : MonoBehaviour
         //playerAudio.clip = deathClip;
         //playerAudio.Play();
 
-        // Turn off the movement and shooting scripts.
+        
     }
 }

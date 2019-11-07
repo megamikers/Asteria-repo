@@ -8,7 +8,7 @@ public class BossBehaviour : MonoBehaviour
 {
     // Member Variables
     public float bossSpeed = 0.5f;              // Adjust the enemy's speed
-    public Transform __player;                     // The position of the player
+    public Transform __player;                  // The position of the player
     public Transform bossTransform;            // The position of the enemy 
     public bool notDead = true;                 // Determine if the player is dead or not
    // Animator anim;                              // Reference to the animator component.
@@ -23,7 +23,7 @@ public class BossBehaviour : MonoBehaviour
     Animator anim;                              // Reference to the animator component.
     GameObject player;                          // Reference to the player GameObject.
     PlayerHealth playerHealth;                  // Reference to the player's health.
-    //EnemyHealth enemyHealth;                    // Reference to this enemy's health.
+    BossHealth BossHealth;                    // Reference to this enemy's health.
     bool playerInRange;                         // Whether player is within the trigger collider and can be attacked.
     float timer;                                // Timer for counting up to the next attack.
 
@@ -33,7 +33,7 @@ public class BossBehaviour : MonoBehaviour
         // Setting up the references.
         player = GameObject.FindGameObjectWithTag("Player");
         playerHealth = player.GetComponent<PlayerHealth>();
-       // enemyHealth = GetComponent<EnemyHealth>();
+        BossHealth = GetComponent<BossHealth>();
         anim = GetComponent<Animator>();
         //fab = GetComponent<Prefab>();
     }

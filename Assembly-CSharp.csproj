@@ -179,6 +179,7 @@
     <Compile Include="Assets\Scripts\BossScripts\BossAttack.cs" />
     <Compile Include="Assets\Scripts\BossScripts\BossBehaviour.cs" />
     <Compile Include="Assets\Scripts\BossScripts\BossHealth.cs" />
+    <Compile Include="Assets\Scripts\GameOverManager.cs" />
     <Compile Include="Assets\Scripts\LevelReset.cs" />
     <Compile Include="Assets\Scripts\MainMenu Scripts\LoadSceneOnClick.cs" />
     <Compile Include="Assets\Scripts\MainMenu Scripts\QuitOnClick.cs" />
