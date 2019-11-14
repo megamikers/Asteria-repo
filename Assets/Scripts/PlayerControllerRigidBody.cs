@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerControllerRigidBody : MonoBehaviour {
-
+public class PlayerControllerRigidBody : MonoBehaviour
+ {
 	private string MoveInputAxis = "Vertical";
 	private string TurnInputAxis = "Horizontal";
 
@@ -27,6 +27,7 @@ public class PlayerControllerRigidBody : MonoBehaviour {
 		float turnAxis = Input.GetAxis(TurnInputAxis);
 
         ApplyInput(moveAxis, turnAxis);
+
 	}
 
     private void ApplyInput(float moveInput,
