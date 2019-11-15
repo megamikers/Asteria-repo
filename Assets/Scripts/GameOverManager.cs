@@ -1,5 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
+
 
 using UnityEngine;
 
@@ -26,7 +28,7 @@ public class GameOverManager : MonoBehaviour
         // If the player has run out of health...
         if (playerHealth.currentHealth <= 0)
         {
-            Application.LoadLevel(Application.loadedLevel);
+			SceneManager.LoadScene("Asteria Boss Scene");
 
             // ... tell the animator the game is over.
             //anim.SetTrigger("GameOver");
@@ -38,7 +40,7 @@ public class GameOverManager : MonoBehaviour
             if (restartTimer >= restartDelay)
             {
                 // .. then reload the currently loaded level.
-                Application.LoadLevel(Application.loadedLevel);
+				SceneManager.LoadScene("Asteria Boss Scene");
             }
         }
     }

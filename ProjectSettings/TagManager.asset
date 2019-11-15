@@ -9,6 +9,7 @@ TagManager:
   - Breadcrumb
   - Mushroom Men
   - Collectables
+  - Light
   layers:
   - Default
   - TransparentFX
