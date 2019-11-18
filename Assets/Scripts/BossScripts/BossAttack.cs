@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 
 public class BossAttack : MonoBehaviour
@@ -28,10 +29,10 @@ public class BossAttack : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         // If the entering collider is the player...
-        if (other.gameObject == player)
+        if(other.gameObject.CompareTag("Player"))
         {
             // ... the player is in range.
-            playerInRange = true;
+            SceneManager.LoadScene("Asteria Boss Scene");
         }
     }
 

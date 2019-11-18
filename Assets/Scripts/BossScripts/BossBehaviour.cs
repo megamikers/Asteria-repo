@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 // Controls the enemy AI
 
@@ -42,10 +43,10 @@ public class BossBehaviour : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         // If the entering collider is the player...
-        if (other.gameObject == player)
+        if (other.gameObject.CompareTag("Player"))
         {
             // ... the player is in range.
-            playerInRange = true;
+            SceneManager.LoadScene("Asteria Boss Scene");
         }
     }
 
