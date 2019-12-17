@@ -15,6 +15,18 @@ public class PlayerControllerRigidBody : MonoBehaviour
 
     private Rigidbody rb;
 
+    public float Speed;
+    void FixedUpdate()
+    {
+
+        if (Input.GetKey(KeyCode.Space))
+        {
+
+            GetComponent<Rigidbody>().AddForce(Vector2.up * Speed);
+        }
+    }
+
+
     private void Start() 
     {
         rb = GetComponent<Rigidbody>();
