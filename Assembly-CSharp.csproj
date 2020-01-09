@@ -63,7 +63,6 @@
     <Compile Include="Assets\Art Assets\Skybox Art Assets\Demo\Script\LookCamera.cs" />
     <Compile Include="Assets\Art Assets\Skybox Art Assets\StarNestSkybox\Scripts\CameraScroll.cs" />
     <Compile Include="Assets\Art Assets\Skybox Art Assets\StarNestSkybox\Scripts\SkyboxSwitcher.cs" />
-    <Compile Include="Assets\BossCollectable.cs" />
     <Compile Include="Assets\Models\Enemy Models\MushroomMonster\Script\MushroomMon_Ani_Test.cs" />
     <Compile Include="Assets\Models\Environmental Models\GreenForest\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
     <Compile Include="Assets\Models\Environmental Models\GreenForest\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
@@ -110,6 +109,7 @@
     <Compile Include="Assets\Models\Environmental Models\GreenForest\PostProcessing\Runtime\Utils\MaterialFactory.cs" />
     <Compile Include="Assets\Models\Environmental Models\GreenForest\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
     <Compile Include="Assets\Models\Environmental Models\GreenForest\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
+    <Compile Include="Assets\playerJump.cs" />
     <Compile Include="Assets\SabreCSG\Scripts\Brushes\PrimitiveBrush.cs" />
     <Compile Include="Assets\SabreCSG\Scripts\CallbackEvents.cs" />
     <Compile Include="Assets\SabreCSG\Scripts\CSGModel.cs" />
@@ -177,7 +177,8 @@
     <Compile Include="Assets\Scripts\_EnemyAIScripts\NavMover.cs" />
     <Compile Include="Assets\Scripts\_EnemyAIScripts\Tags.cs" />
     <Compile Include="Assets\Scripts\_EnemyAIScripts\WaypointSystem.cs" />
-    <Compile Include="Assets\Scripts\Boss_Cleared.cs" />
+    <Compile Include="Assets\Scripts\BossCollectable.cs" />
+    <Compile Include="Assets\Scripts\BossScripts\Boss_Cleared.cs" />
     <Compile Include="Assets\Scripts\BossScripts\BossAttack.cs" />
     <Compile Include="Assets\Scripts\BossScripts\BossBehaviour.cs" />
     <Compile Include="Assets\Scripts\BossScripts\BossHealth.cs" />
@@ -188,7 +189,6 @@
     <Compile Include="Assets\Scripts\MainMenu Scripts\LoadSceneOnClick.cs" />
     <Compile Include="Assets\Scripts\MainMenu Scripts\QuitOnClick.cs" />
     <Compile Include="Assets\Scripts\PlayerAnimationScript.cs" />
-    <Compile Include="Assets\Scripts\PlayerAttack.cs" />
     <Compile Include="Assets\Scripts\PlayerControllerRigidBody.cs" />
     <Compile Include="Assets\Scripts\PlayerControllerTransform.cs" />
     <Compile Include="Assets\Scripts\PlayerHealth.cs" />
