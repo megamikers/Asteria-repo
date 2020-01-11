@@ -6818,6 +6818,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da643d87c3ca94f0694378ada0f8810f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nextScene: Asteria Boss Scene
   essence: 3
 --- !u!1 &845258211
 GameObject:
