@@ -7,6 +7,8 @@ public class PlayerControllerRigidBody : MonoBehaviour
 	private string MoveInputAxis = "Vertical";
 	private string TurnInputAxis = "Horizontal";
 
+    public Collider other;
+
     private float jumpForce = 10f; //how much force you want when jumping
     private bool onGround; //allows the functions to determine whether player is on the ground or not
 
@@ -25,8 +27,10 @@ public class PlayerControllerRigidBody : MonoBehaviour
 
         if (Input.GetKey(KeyCode.Space))
         {
+            Vector3 input = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
 
-            GetComponent<Rigidbody>().AddForce(Vector2.up * Speed);
+            gameObject.GetComponent<CharacterController>().Move(input * Speed * Time.deltaTime);
+            //GetComponent<Rigidbody>().AddForce(Vector2.up * Speed);
         }
     }
 
@@ -46,7 +50,7 @@ public class PlayerControllerRigidBody : MonoBehaviour
 
         ApplyInput(moveAxis, turnAxis);
 
-        if(Input.GetButton("Jump") && onGround == true);
+        if(Input.GetButton("Jump") && onGround == true)
             {
             //adds force to player on the y axis by using the flaot set for the variable jumpForce. Causes the player to jump
             
@@ -69,6 +73,9 @@ public class PlayerControllerRigidBody : MonoBehaviour
 
         // mention this trash function automatically converts to local space
         rb.AddForce(transform.forward * input * moveRate, ForceMode.Force);
+
+        
+        
     }
 
 

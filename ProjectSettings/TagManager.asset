@@ -10,6 +10,8 @@ TagManager:
   - Mushroom Men
   - Collectables
   - Light
+  - CheckPoint
+  - Maze
   layers:
   - Default
   - TransparentFX
@@ -25,8 +27,8 @@ TagManager:
   - Waypoint
   - Boss
   - PostProcessing
-  - 
-  - 
+  - Learner
+  - Collision
   - 
   - 
   - 
