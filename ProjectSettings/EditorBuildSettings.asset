@@ -8,13 +8,16 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scene/Asteria MainMenu.unity
     guid: a9dda0f32d0751449a04a3400bc79d44
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scene/Asteria 001.unity
     guid: a7533a30c7eede844b72dde179f3073a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scene/Asteria Boss Scene.unity
     guid: a98983354fe8c1348a4ae5a8da53843b
+  - enabled: 1
+    path: Assets/__NN/Scenes/Environment.unity
+    guid: 06b2fa4073efe104cbccd5d4cafe4009
   m_configObjects: {}

@@ -4715,7 +4715,7 @@ MonoBehaviour:
   layers: 050000000300000002000000
   MutationChance: 0.05
   MutationStrength: 0.5
-  Gamespeed: 1
+  Gamespeed: 6.05
 --- !u!23 &8777913658019552210
 MeshRenderer:
   m_ObjectHideFlags: 0
